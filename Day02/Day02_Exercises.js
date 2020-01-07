@@ -365,7 +365,23 @@ string='AbcdEfghij'
 randNumber1=Math.floor(Math.random() * (string.length - 1 ) ) + 1;
 console.log(randNumber1)
 console.log(string.charAt(randNumber1))
+
+//39
 const defaultValue=1
 for (let i = 1; i < 6; i++) {
     console.log (`${i}\t${defaultValue}\t${i*defaultValue}\t${i*i}\t${(i*i)*i}`)
 };
+
+//40
+let tenValue=10
+let tenValueTypeOf=typeof(10)
+console.log(`typeof ten is equal to ten: ${tenValueTypeOf==tenValue}`)
+tenValue=tenValueTypeOf
+console.log(`Making typeof ten is equal to ten: ${tenValueTypeOf==tenValue}`)
+
+//41
+num=9.8
+let numInteger=parseInt(num)
+console.log(`parseInt('9.8') is equal to 10: ${numInteger==10}`)
+numInteger=parseInt(Math.ceil(num))
+console.log(`parseInt('9.8') is equal to 10: ${numInteger==10}`)
